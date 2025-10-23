@@ -26,8 +26,7 @@ Tech Stack
 
 Live Demo
 
-🔗 [View the Live Project](https://YOUR_USERNAME.github.io/climate-pledge-app/)  
-
+https://drisha19.github.io/climate-pledge-website/
  
  How It Works
 
@@ -51,5 +50,6 @@ Future Improvements
 
 P.DRISHA   
 drisha.p2022@vitstudent.ac.in
+[GitHub Profile] https://github.com/drisha19/climate-pledge-website.git
 
 

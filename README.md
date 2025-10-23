@@ -25,8 +25,22 @@ Tech Stack
 ---
 
 Live Demo
-
 https://drisha19.github.io/climate-pledge-website/
+
+
+SCREENSHOTS :
+
+![1 png](https://github.com/user-attachments/assets/975975f0-5c29-4118-aff3-8562a104457d)
+![2 png](https://github.com/user-attachments/assets/dda95dca-03e0-4821-91df-a82652bf4e3a)
+![3 png](https://github.com/user-attachments/assets/c0453c04-bd14-4603-867a-9c0608dd2693)
+![4 png](https://github.com/user-attachments/assets/86e311b7-4c6a-44a1-85b9-114e8417003b)
+![5 png](https://github.com/user-attachments/assets/e52d114f-1868-4221-8076-e2385cde8989)
+![6 png](https://github.com/user-attachments/assets/626f6a65-7ee4-4e37-abb9-861cf19e3fed)
+
+
+
+
+
  
  How It Works
 

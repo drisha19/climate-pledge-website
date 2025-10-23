@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Climate Action Pledge</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- BACKGROUND ANIMATION -->
+<div id="background-animation"></div>
+
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="container">
+      <h1>Take the Climate Action Pledge</h1>
+      <p>Small actions add up. Join our community and commit to climate-positive habits.</p>
+      <button id="takePledgeBtn">Take the Pledge</button>
+    </div>
+  </header>
+
+  <!-- ECO TIPS WIDGET -->
+<section id="eco-tips" class="container" style="text-align:center; margin:30px auto;">
+  <h3>🌿 Eco-Tip of the Moment</h3>
+  <p id="ecoTip" style="font-size:1.2rem; color:#2e7d32; font-weight:500;">
+    Loading tips...
+  </p>
+</section>
+
+
+  <!-- KPI SECTION -->
+  <section id="kpis" class="container">
+    <div class="kpi">
+      <h3>Target</h3>
+      <p id="kpi-target">1,000,000</p>
+    </div>
+    <div class="kpi">
+      <h3>Achieved</h3>
+      <p id="kpi-achieved">0</p>
+    </div>
+    <div class="kpi">
+      <h3>Students</h3>
+      <p id="kpi-students">0</p>
+    </div>
+  </section>
+
+  <!-- FILTER TOOLBAR -->
+  <div id="filters" class="container" style="text-align:center; margin-top:10px;">
+    <label>Filter by Profile:
+      <select id="filterProfile">
+        <option value="all">All</option>
+        <option value="Student">Students</option>
+        <option value="Working Professional">Working Professionals</option>
+        <option value="Other">Others</option>
+      </select>
+    </label>
+  </div>
+
+  <!-- WHY SECTION -->
+  <section id="why" class="container">
+    <h2>Why take climate action?</h2>
+    <p>Every action matters. Your pledge helps create a visible community that inspires others.</p>
+  </section>
+
+  <!-- PLEDGE FORM -->
+  <section id="pledge-form" class="container">
+    <h2>Make your pledge</h2>
+    <form id="form">
+      <label>Name* <input name="name" required /></label>
+      <label>Email* <input type="email" name="email" required /></label>
+      <label>Mobile* <input name="mobile" required /></label>
+      <label>State <input name="state" /></label>
+
+      <div>
+        <label>Profile Type</label>
+        <select name="profile">
+          <option>Student</option>
+          <option>Working Professional</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Commitments (pick any)</legend>
+        <label><input type="checkbox" name="commit" value="reduce-plastic"> Reduce plastic</label>
+        <label><input type="checkbox" name="commit" value="save-energy"> Save energy</label>
+        <label><input type="checkbox" name="commit" value="use-bus"> Use public transport</label>
+      </fieldset>
+
+      <p class="privacy-note">Mobile & Email are required for verification; never shown publicly.</p>
+      <button type="submit">Submit Pledge</button>
+    </form>
+  </section>
+
+  <!-- CERTIFICATE PREVIEW -->
+  <section id="certificate" class="container" style="display:none; text-align:center;">
+    <h2>Your Certificate</h2>
+    <canvas id="certCanvas" width="800" height="600" style="border:1px solid #ccc; border-radius:12px;"></canvas>
+    <br />
+    <button id="downloadCertBtn" style="margin-top:15px;">Download Certificate</button>
+  </section>
+
+  <!-- PLEDGE WALL -->
+  <section id="pledge-wall" class="container">
+    <h2>Pledge Wall</h2>
+    <table id="pledgeTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>State</th>
+          <th>Profile</th>
+          <th>♥</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <!-- PLEDGE DATA CHART -->
+<section id="pledge-chart" class="container" style="text-align:center;">
+  <h2>Profile Summary</h2>
+  <canvas id="pledgeChart" width="400" height="300"></canvas>
+</section>
+
+
+  
+  <!-- Chart.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* ---------- GLOBAL ---------- */
+:root {
+  --green: #2e7d32;
+  --light-green: #e8f5e9;
+  --dark: #222;
+  --gray: #666;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: var(--dark);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ---------- HERO ---------- */
+#hero {
+  background: var(--light-green);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  color: var(--green);
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+#hero button {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#hero button:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+/* ---------- KPI SECTION ---------- */
+#kpis {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #fafafa;
+  padding: 30px 10px;
+}
+
+.kpi {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin: 10px;
+  flex: 1 1 200px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.kpi:hover {
+  transform: translateY(-5px);
+}
+
+.kpi h3 {
+  color: var(--green);
+  margin-bottom: 5px;
+}
+
+/* ---------- WHY SECTION ---------- */
+#why {
+  background: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#why h2 {
+  color: var(--green);
+  margin-bottom: 15px;
+}
+
+/* ---------- FORM SECTION ---------- */
+#pledge-form {
+  background: var(--light-green);
+  padding: 40px 20px;
+  border-radius: 16px;
+  margin: 30px auto;
+}
+
+#pledge-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#pledge-form label,
+#pledge-form select,
+#pledge-form input {
+  font-size: 1rem;
+  width: 100%;
+}
+
+#pledge-form input,
+#pledge-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+legend {
+  color: var(--green);
+  font-weight: 600;
+}
+
+#pledge-form button {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#pledge-form button:hover {
+  background: #1b5e20;
+  transform: translateY(-2px);
+}
+
+.privacy-note {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+/* ---------- PLEDGE WALL ---------- */
+#pledge-wall {
+  padding: 40px 20px;
+}
+
+#pledge-wall h2 {
+  color: var(--green);
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background: #f1f8e9;
+  color: var(--green);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 700px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #kpis {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kpi {
+    width: 90%;
+  }
+}
+
+/* ---------- BACKGROUND ANIMATION ---------- */
+#background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+}
+
+.leaf {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/765/765614.png');
+  background-size: cover;
+  opacity: 0.8;
+  animation: floatDown linear forwards;
+}
+
+@keyframes floatDown {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
